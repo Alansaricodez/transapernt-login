@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transparent login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            height: 100vh;
+            background-image: url(./laptop.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 1em;
+            background: transparent;
+            max-width: 400px;
+            width: 90%;
+            box-shadow: 0 0 23px #ddd;
+            border-radius: 18px;
+            text-align: center;
+        }
+        
+        h1 {
+            width: 100%;
+            color: #fff;
+            font-size: 3em;
+        }
+        
+        hr {
+            width: 100%;
+            background: #fff;
+            margin: .3em 0;
+        }
+        
+        label,
+        h3 {
+            width: 100%;
+            font-size: 1.2em;
+            color: #fff;
+            padding: .5em 0;
+        }
+        
+        label {
+            text-align: left;
+        }
+        
+        h3 {
+            font-weight: normal;
+            margin: 10px;
+        }
+        
+        .inputs {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin: 2em 0;
+        }
+        
+        input {
+            width: 100%;
+            border-radius: 8px;
+            border: none;
+            padding: 1em 2em;
+        }
+        
+        .forget {
+            text-align: right;
+            color: #ddd;
+            margin: .3em;
+            width: 100%;
+        }
+        
+        .forget a {
+            text-decoration: none;
+            color: #fff;
+            transition: all .3s ease;
+        }
+        
+        .forget a:hover {
+            color: rgb(119, 114, 114);
+        }
+        
+        .socials {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+        }
+        
+        .socials a {
+            text-decoration: none;
+            padding: .7em;
+            border-radius: 8px;
+            margin: 0 .3em;
+            color: #fff;
+            width: 100%;
+        }
+        
+        .facebook {
+            background-color: blue;
+            transition: all .3s ease;
+        }
+        
+        .facebook:hover {
+            background-color: #fff;
+            color: #000;
+        }
+        
+        .twitter {
+            background-color: rgb(27, 116, 218);
+            transition: all .3s ease;
+        }
+        
+        .twitter:hover {
+            background-color: #fff;
+            color: #000;
+        }
+        
+        .sign-up {
+            font-size: 1rem;
+            padding: .5em;
+            color: #ddd;
+        }
+        
+        .sign-up a {
+            color: #fff;
+            transition: all .3s ease;
+        }
+        
+        .sign-up a:hover {
+            color: rgb(119, 114, 114);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h1>Log in</h1>
+        <hr>
+        <div class="inputs">
+            <label for="username">Username</label>
+            <input type="text" name="username" placeholder="username">
+            <label for="password">Username</label>
+            <input type="password" name="password" placeholder="password">
+        </div>
+
+        <p class="forget">forgot your password
+            <a href="">click here</a>
+        </p>
+
+        <h3>or log in using,</h3>
+        <div class="socials">
+            <a class="facebook" href=""><i class="fab fa-facebook-f"></i></a>
+            <a class="twitter" href=""><i class="fab fa-twitter"></i></a>
+        </div>
+
+        <h3 class="sign-up">Don't have an account yet? <a href="">sign up here</a></h3>
+    </div>
+</body>
+
+</html>
